@@ -1,0 +1,2 @@
+"use client";
+export default function ErrorPage({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <main className="error-page"><span className="eyebrow">FOLIO</span><h1>Let’s try that again.</h1><p>Something interrupted this page. Please try reloading the experience.</p><button className="button button-primary" onClick={reset}>Try again</button><a href="/">Back to home</a></main>; }
